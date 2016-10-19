@@ -155,12 +155,15 @@ function sink (read) {
 
 a source stream is an async function to be called repeatedly.
 
-```
+
+``` js
 function source (abort, cb) {
   ...
 }
+```
 
 a _through_ stream is a sink stream that returns a source stream.
+
 
 ``` js
 function sink (read) {
@@ -168,7 +171,6 @@ function sink (read) {
     ...
   }
 }
-
 ```
 
 Implement a through stream that takes a map function, and applies it to the source stream...
@@ -200,12 +202,12 @@ implement a function, `pull()` that takes streams, and passes one to another.
 
 `pull(source, map, sink)`
 
+
 ``` js
 module.exports = function pull () {
   var args = [].slice.call(arguments)
   ...
 }
-
 ```
 
 to test, run `node verify.js 4 exercise04.js`
