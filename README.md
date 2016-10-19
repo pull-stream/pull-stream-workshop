@@ -113,7 +113,7 @@ Congratulations, you have just written a pull-stream sink!
 
 a stream is like an array in time.
 write a function that takes an array,
-and returns an async function named `read` that callsback each item in the array in turn.
+and returns an async function named `read` that calls back each item in the array in turn.
 
 ``` js
 module.exports = function (array) {
@@ -133,7 +133,7 @@ module.exports = function (array) {
 
 when all the items are read, cb(true) to indicate the end of the stream.
 
-to run test `node verify.fs 2 exercise02.js`
+to run test `node verify.js 2 exercise02.js`
 
 ---
 
