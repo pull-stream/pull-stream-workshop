@@ -92,7 +92,7 @@ you can start with this code:
 ``` js
 
 module.exports = function (cb) {
-  returnfunction (read) {
+  return function (read) {
     //your pull-stream reader...
     read(null, function cb (err, data) {
       ...
