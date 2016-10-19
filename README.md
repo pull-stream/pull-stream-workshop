@@ -1,4 +1,4 @@
-# pull-stream-worshop
+# pull-stream-workshop
 
 `pull-streams` are a simple streaming pattern.
 You do not need to depend on a module to create a pull-stream,
