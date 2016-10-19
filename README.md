@@ -298,6 +298,7 @@ pull(
   toPull.source(process.stdin),
   //your wc implementation
 )
+```
 
 ---
 
