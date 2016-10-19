@@ -1,0 +1,24 @@
+{
+  "name": "pull-stream-meditation-worshop",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dominictarr/pull-stream-meditation-worshop",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/pull-stream-meditation-worshop.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "pull-defer": "^0.2.2",
+    "pull-file": "^1.0.0",
+    "pull-glob": "^1.0.6",
+    "pull-stream": "^3.4.5",
+    "stream-to-pull-stream": "^1.7.2",
+    "tape": "^4.6.0"
+  },
+  "scripts": {
+    "test": "set -e; for t in test/*.js; do node $t; done"
+  },
+  "author": "'Dominic Tarr' <dominic.tarr@gmail.com> (dominictarr.com)",
+  "license": "MIT"
+}
