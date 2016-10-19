@@ -183,7 +183,6 @@ module.exports = function (map) {
     }
   }
 }
-
 ```
 
 ---
@@ -232,7 +231,6 @@ module.exports = function (n) {
     }
   }
 }
-
 ```
 
 to test `node verify.js 5 exercise05.js`
@@ -246,8 +244,6 @@ this allows us to read from infinite streams!
 ### exercise 6 - ls
 
 `ls` lists a directory. given a directory, it outputs the files in that directory.
-
-## problem
 
 use node's fs module to read create a stream of filenames in a directory.
 
@@ -292,7 +288,7 @@ output the total number of lines. (for extra points, also output characters and 
 
 to convert standard input into a pull-stream, use [stream-to-pull-stream](https://www.npmjs.com/package/stream-to-pull-stream)
 
-```
+``` js
 var toPull = require('stream-to-pull-stream')
 var pull = require('pull-stream')
 
@@ -364,7 +360,7 @@ and no more until the next user input. so a human is able to read it.
 create a pull-stream that reads standard input, and outputs one page and no more,
 until the user presses a key (hint: read data on process.stdin)
 
-```
+``` js
 pull(
   File(process.argv[2]),
   //Read a N line page and output it when user reads more.
@@ -425,6 +421,7 @@ if you complete this exercise, you get an instant A, and are not required to com
 ## License
 
 MIT
+
 
 
 
