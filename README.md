@@ -2,7 +2,7 @@
 
 `pull-streams` are a simple streaming pattern.
 You do not need to depend on a module to create a pull-stream,
-you just use functions in a certian way.
+you just use functions in a certain way.
 
 pull-stream can do everything node streams can do, but they also
 propogate errors, and tidy themselves up after use.
@@ -10,7 +10,7 @@ Node streams don't even do that!
 
 This workshop will first take you through the basic internals of pull-streams,
 you'll implement the main patterns in just a few lines.
-The official pull-stream module uses a few more to optimize, but not many more.
+The official pull-stream module uses a few more to optimize, but not much more.
 
 Part 2 is a walk around the pull-stream ecosystem. We'll demonstrate some of the most useful
 pull-stream modules, to recreate some familiar UNIX tools, such as `ls`, `wc`, `grep`, `tail -f` and `less`
@@ -19,7 +19,7 @@ Part 1 is probably more challenging, and because it needs to be exactly right, t
 to check your implementation is correct.
 To run a test, run `node verify {exercise_number} {your_script.js}`
 
-There are no tests provided by Part 2, but you should run it them on your
+There are no tests provided by Part 2, but you should run them on your
 local file system and see what they do.
 
 
@@ -69,12 +69,12 @@ the following section is
 
 ### exercise 1 - a logging sink
 
-A pull-stream is just an async function that is called repeatedly,
+A pull-stream is just an async function that is repeatedly called,
 until it says "stop!".
 
-Write a function that is takes a callback,
+Write a function that takes a callback,
 and returns a function that is passed a `read` function,
-and then calls it with a callback `cb(end, data)`.
+and then calls it with a callback `cb(end, data)`
 and if `end` is truthy then stop.
 
 Otherwise,
@@ -304,7 +304,7 @@ pull(
 
 `grep` _filters_ lines that patch patterns inside streams.
 
-take a string or regular expression as the first argument, read stdin an output lines
+take a string or regular expression as the first argument, read stdin and output lines
 that match the pattern.
 
 ```
@@ -376,7 +376,7 @@ pull(
 take your code for exercise 7, and extend it to read directories recursively.
 if a file is a node_modules directory, it should expand it, and stream inside of it.
 
-there are different ways you can traverse a tree, choose the way that seems most appropiate!
+there are different ways you can traverse a tree, choose the way that seems most appropriate!
 
 see also [pull-traverse](https://npm.im/pull-traverse) and [pull-glob](https://npm.im/pull-glob)
 
